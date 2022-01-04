@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_cost_title"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_margin="4dp"
+        android:hint="Cost Title"
+        android:inputType="textShortMessage"
+        android:textColor="#ffbd27"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/et_cost_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="Cost Money"
+        android:inputType="number|numberDecimal"
+        android:textColor="#ffbd27"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_margin="4dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:text="addtest"
+        android:textColor="#ffbd27"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/LocateButton"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:background="#ffbd27"
+        android:text="locate" />
+
+    <DatePicker
+        android:id="@+id/dp_cost_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="80dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="40dp"
+        android:background="#ffbd27"
+        android:onClick="okButton"
+        android:text="确认"
+        android:textColor="#333333"
+        android:textSize="20dp" />
+
+</LinearLayout>
